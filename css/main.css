@@ -1,0 +1,567 @@
+@font-face {
+  font-family: "Mistery Mixed";
+  src: url("../fonts/Mystery Mixed.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-weight: normal;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: "Mystery Mixed", serif;
+  font-size: 2.5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px;
+}
+
+.navbar-ul {
+  display: flex;
+}
+
+.navbar-ul-li {
+  margin: 2rem;
+}
+
+.navbar-ul-li:hover {
+  border-bottom: solid #ff038d 1px;
+  transition: 1s;
+}
+
+.section-about {
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  width: 100%;
+  height: 700px;
+  margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
+}
+.section-about-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20rem;
+  width: 50vw;
+  font-family: "Mystery Mixed", serif;
+  font-size: 2rem;
+}
+
+.title {
+  font-size: 36px;
+  white-space: nowrap;
+  position: relative;
+  display: inline-block;
+  animation: typing 3s steps(30);
+  animation-fill-mode: forwards;
+  height: 100px;
+  font-size: 3.5rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Mystery Mixed", serif;
+}
+
+.title-section {
+  font-size: 3rem;
+  padding: 4px;
+  background: black;
+  color: white;
+  width: 15%;
+  text-align: center;
+  transform: rotate(-5deg);
+  transform-origin: left bottom;
+}
+
+.title-section-span {
+  font-size: 5rem;
+}
+
+span {
+  font-size: 7rem;
+}
+
+.title::after {
+  content: "|";
+  position: absolute;
+  top: 0;
+  left: calc(100% + 2px); /* Coloca el cursor al lado del texto */
+  opacity: 1;
+  animation: blinking-caret 0.5s step-end infinite;
+}
+
+.diagonal-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -5;
+  transform-origin: top right;
+}
+
+.section-about-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+.maca {
+  width: 15%;
+  height: auto;
+  transition: transform 1s ease-in-out;
+  position: absolute;
+  z-index: 2;
+}
+
+main {
+  margin-top: 7.5rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
+}
+
+.about-me {
+  padding-top: 20rem;
+}
+
+p {
+  font-family: "Bricolage Grotesque", sans-serif;
+  margin-top: 3rem;
+}
+
+.description {
+  font-size: 1.5rem;
+}
+
+.descriptions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.descriptions article {
+  padding: 2rem;
+}
+
+.title-star {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  background-image: url("../img/fondo/background.png");
+  transform: rotate(0.5deg);
+  transform-origin: left bottom;
+  color: white;
+  padding: 1.5rem;
+}
+
+.title-star img {
+  width: 15%;
+  position: absolute;
+  left: 80%;
+  top: -50%;
+}
+
+.descriptions p {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+h3 {
+  font-size: 2.5rem;
+  align-self: center;
+}
+
+blockquote {
+  background-color: black;
+  color: white;
+  text-align: center;
+  transform: rotate(-1deg);
+  transform-origin: left bottom;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 1.5rem;
+  padding: 10px;
+  width: 50%;
+  margin: 5rem auto;
+}
+
+.myskills {
+  margin-top: 15rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  margin-bottom: 15rem;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  background-image: url("../img/fondo/paper.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 800px;
+  width: 90%;
+}
+
+.skill-image {
+  max-width: 100px;
+}
+
+.myskills-img {
+  display: flex;
+  align-items: center;
+}
+
+.myskills img {
+  padding: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+footer {
+  background-image: url("../img/fondo/background.png");
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact img {
+  max-width: 10%;
+  height: 8%;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: fit-content;
+  }
+}
+
+@keyframes blinking-caret {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 468px) {
+  .maca {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
+
+  .section-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .section-about-left {
+    margin: 0;
+    text-align: center;
+    max-width: 80vw;
+  }
+
+  .section-about-left h1 {
+    font-size: 2.8rem;
+  }
+
+  .section-about-left h2 {
+    font-size: 2.3rem;
+  }
+
+  .section-about-left span {
+    font-size: 2.8rem;
+  }
+
+  .section-about-left h1 span {
+    font-size: 3.2rem;
+  }
+
+  .title {
+    font-size: 1.7rem;
+    max-width: 80vw;
+    white-space: break-spaces;
+  }
+
+  .diagonal-background {
+    height: 15vh;
+  }
+  .section-about-right {
+    height: 30vh;
+  }
+
+  .maca {
+    width: 40vw;
+  }
+
+  main {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80vw;
+  }
+  .title-section-span {
+    font-size: 2.5rem;
+  }
+  .about-me {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .title-section {
+    font-size: 2rem;
+    padding: 2px;
+    width: 40vw;
+  }
+
+  .about-me p {
+    font-size: 1.2rem;
+  }
+
+  .descriptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+  .descriptions p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .title-star {
+    padding: 0.5rem;
+  }
+
+  .title-star h3 {
+    font-size: 1.8rem;
+  }
+  .title-star img {
+    top: -15%;
+  }
+
+  blockquote {
+    width: 80vw;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+  }
+
+  .myskills {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+
+  .skills-container {
+    margin-top: 2rem;
+    width: 80vw;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    height: fit-content;
+  }
+
+  .myskills-img {
+    width: 90vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill-image {
+    width: 3rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .contact img {
+    max-width: 40vw;
+  }
+
+  .back-to-top img {
+    width: 60%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1802px) {
+  .navbar-ul-li {
+    font-size: 2rem;
+    margin: 1.5rem;
+  }
+
+  .section-about {
+    width: 75vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+  }
+  .section-about-left {
+    margin: 0;
+  }
+
+  .section-about-left h1,
+  .section-about-left h2 {
+    font-size: 3rem;
+  }
+
+  .section-about-left h1 span {
+    font-size: 4rem;
+  }
+
+  .diagonal-background {
+    height: 35vw;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    max-width: 80vw;
+    white-space: break-spaces;
+  }
+
+  .section-about-right {
+    height: 50vh;
+  }
+
+  .maca {
+    width: 25vw;
+  }
+
+  .about-me {
+    padding-top: 2rem;
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  main {
+    margin: 0 auto;
+  }
+
+  .title-section {
+    width: 30vw;
+  }
+
+  .title-section-span {
+    font-size: 3rem;
+  }
+
+  .descriptions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .descriptions p {
+    font-size: 1.2rem;
+  }
+
+  blockquote {
+    width: 80vw;
+  }
+
+  .myskills {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .skills-container {
+    width: 103%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 500px;
+  }
+
+  .myskills-img {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .skill-image {
+    width: 3rem;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .contact img {
+    max-width: 15vw;
+  }
+}
+
+@media (min-width: 1130px) and (max-width: 1802px) {
+  .maca {
+    max-width: 30%;
+  }
+
+  .section-about {
+    margin-bottom: 8rem;
+  }
+
+  .skill-image {
+    width: 3.5rem;
+  }
+}
